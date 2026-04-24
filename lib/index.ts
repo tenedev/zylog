@@ -577,7 +577,12 @@ export class Zylog {
    *
    * @example
    * ```ts
-   * zylog.json({ query: "SELECT * FROM users" }, "debug");
+   * zylog.json({ query: "SELECT * FROM users" }, {level:"debug"});
+   * ```
+   *
+   * @example
+   * ```ts
+   * zylog.json({ query: "SELECT * FROM users" }, {message:"Database queiign"});
    * ```
    */
   json(
@@ -585,12 +590,23 @@ export class Zylog {
      * The object to log.
      */
     data: object,
-    /**
-     * Optional log level.
-     */
-    level: ZylogOutputLevel = 'info',
+    {
+      message,
+      level = 'info',
+    }: {
+      /**
+       * Optional log level.
+       *
+       * @default "info"
+       */
+      level?: ZylogOutputLevel;
+      /**
+       * Optional message prefix for context.
+       */
+      message?: string;
+    } = {},
   ) {
-    this.writeLog(level, [JSON.stringify(data, null, 2)]);
+    this.writeLog(level, [message, JSON.stringify(data, null, 2)]);
   }
 
   /**
