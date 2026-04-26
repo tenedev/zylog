@@ -8,7 +8,13 @@ import { Aside } from '@astrojs/starlight/components';
 ## Signature
 
 ```ts
-json(data: object, level: ZylogOutputLevel = 'info'): void
+json(
+  data: object,
+  options?: {
+    level?: ZylogOutputLevel;
+    message?: string;
+  }
+): void
 ```
 
 ## Description
@@ -47,4 +53,27 @@ Add context to your JSON dumps.
 
 ```ts
 zylog.with({ prefix: 'CONFIG' }).json(process.env, 'debug');
+```
+
+### Adding Context Message
+
+Attach a message for better traceability.
+
+```ts
+zylog.json({ query: 'SELECT * FROM users' }, { message: 'Database querying' });
+```
+
+### Error Inspection
+
+Capture structured error details.
+
+```ts
+try {
+  processData();
+} catch (err) {
+  zylog.json(
+    { message: err.message, stack: err.stack },
+    { level: 'error', message: 'Unhandled exception' },
+  );
+}
 ```
