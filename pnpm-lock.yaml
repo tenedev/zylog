@@ -27,8 +27,8 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0(vitest@4.1.0(@types/node@25.5.0)(vite@8.0.0(@types/node@25.5.0)(yaml@2.8.2)))
       echo-banner:
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^0.3.0
+        version: 0.3.0
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -970,10 +970,10 @@ packages:
         integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==,
       }
 
-  echo-banner@0.2.0:
+  echo-banner@0.3.0:
     resolution:
       {
-        integrity: sha512-SGTgv7y7IeVtRr+jilGog7gxSS3LlJDTAo/Tvh8v7DcawdVcYa5SYkqOMIAKeETFK/d+bd1u/NVBjdL7KhjOIw==,
+        integrity: sha512-qgRo/+C8O4/RIPtPVJzRP5tdzN679yTb0t+E01g6u7sHDwjRfiroZ2SGU2Dc6ZkUNTa7+JP4b05VFhede2b++Q==,
       }
     engines: { node: '>=18' }
 
@@ -2589,10 +2589,11 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  echo-banner@0.2.0:
+  echo-banner@0.3.0:
     dependencies:
       figlet: 1.11.0
       js-utils-kit: 2.3.0
+      use-colors: 0.1.0
     transitivePeerDependencies:
       - bare-abort-controller
       - bare-buffer
