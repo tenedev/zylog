@@ -27,7 +27,7 @@
     "access": "public",
     "provenance": false
   },
-  "packageManager": "pnpm@10.34.3",
+  "packageManager": "pnpm@10.34.4",
   "files": [
     "dist"
   ],
