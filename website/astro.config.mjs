@@ -31,8 +31,7 @@ export default defineConfig({
             {
               label: 'Configuration',
               collapsed: true,
-             items: [
-               { autogenerate: { directory: 'reference/config' },},]
+              items: [{ autogenerate: { directory: 'reference/config' } }],
             },
             {
               label: 'Logging Methods',
