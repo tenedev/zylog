@@ -8,7 +8,7 @@ importers:
   .:
     dependencies:
       js-utils-kit:
-        specifier: ^5.0.0
+        specifier: ^5.1.0
         version: 5.1.0
       use-colors:
         specifier: ^0.1.0
