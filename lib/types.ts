@@ -71,9 +71,7 @@ export interface ZylogFormatOptions {
    * @example { trace: 0, fatal: (c) => c.red.bold.bgWhite }
    */
   colors?:
-    | Partial<Record<ZylogOutputLevel, (c: typeof colors) => typeof colors | string>>
-    | 0
-    | undefined;
+    Partial<Record<ZylogOutputLevel, (c: typeof colors) => typeof colors | string>> | 0 | undefined;
 }
 
 export interface ZylogConfig extends ZylogFormatOptions {
