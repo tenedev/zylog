@@ -31,22 +31,22 @@ export default defineConfig({
             {
               label: 'Configuration',
               collapsed: true,
-              autogenerate: { directory: 'reference/config' },
+              items: [{ autogenerate: { directory: 'reference/config' } }],
             },
             {
               label: 'Logging Methods',
               collapsed: true,
-              autogenerate: { directory: 'reference/logging' },
+              items: [{ autogenerate: { directory: 'reference/logging' } }],
             },
             {
               label: 'Stream Management',
               collapsed: true,
-              autogenerate: { directory: 'reference/streams' },
+              items: [{ autogenerate: { directory: 'reference/streams' } }],
             },
             {
               label: 'Utilities & Context',
               collapsed: true,
-              autogenerate: { directory: 'reference/utils' },
+              items: [{ autogenerate: { directory: 'reference/utils' } }],
             },
           ],
         },
