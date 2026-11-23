@@ -750,6 +750,7 @@ packages:
         integrity: sha512-Px4dUpF+/lbJkzbCBcbImG37nSx/ncFw/L+FnPJSwFISpnroECsw0vV8v7ndjHEapVquewIdy08Tffx+BhXPOA==,
       }
     engines: { node: '>=14' }
+    deprecated: 'This package is no longer maintained. Please migrate to @pegora/prettier-config: https://github.com/pegoraio/prettier-config'
     peerDependencies:
       prettier: 3.x
 
